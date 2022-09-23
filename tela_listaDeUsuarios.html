@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+	<head>
+		<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+		<title>Listagem Usuario Cadastrado</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/css/tela_listaUsuario.css" >
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</head>
+
+	<body ondragstart="return false;" ondrop="return false;">
+		<header>
+			<div class="Logo">
+				<a href="">
+					<img src="/css/img/admin.png" alt="adm" title="Usuario Logado">
+				</a>
+			</div>       
+			<h1>SCB</h1>
+			<div class="botaoDeSair">
+				<a href="/teladelogin.html">
+					<img src="/css/img/sair.png" alt="sair" title="sair">
+				</a>
+			</div>
+		</header>
+		<div class="CorMenuVertical">
+			<nav class="abrindoMenu">
+				<ul>
+					<li><a href="tela_carregamentoDeArquivos.html">Arquivos</a></li>
+					<li><a href="#" class="conciliacao">Conciliação</a>
+						<ul class="submenu"> 
+							<li><a href="/tela_deResumoGeral.html">Resumo Geral</a></li>
+						</ul>
+					</li>
+					<li><a href="/tela_listaDeUsuarios.html">Usuários</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="ListaDeUsuarios">
+			<table>
+				<tr>
+					<th>Nome</th>
+					<th>Status</th>
+					<th>Data De Cadastro</th>
+					<th>Cargo</th>
+					<th>Email</th>
+					<th>Ações</th>
+				</tr>
+
+				<tr>
+					<td>Ciclano</td>
+					<td>Ativo</td>
+					<td>21/05/2022</td>
+					<td>Caixa</td>
+					<td>ciclano@gmail.com</td>
+					<td>
+						<a href="/tela_editarPermissoesUsuario.html">
+							<img src="/css/img/editar.png" alt="editarUsuario" title="Editar" width="28px" height="28px">
+						</a>
+						<a href=""> 
+							<img src="/css/img/icon-delete-29.jpg" alt="deletar" title="Deletar" width="28px" height="28px">
+						</a>
+					</td>
+				</tr>
+
+				<tr>
+					<td>Fulano</td>
+					<td>Pendente</td>
+					<td>19/05/2022</td>
+					<td>Tebelião</td>
+					<td>fulano@yahho.com.br</td>
+					<td>
+						<a href="/tela_editarPermissoesUsuario.html">
+							<img src="/css/img/editar.png" alt="editarUsuario" title="Editar" width="28px" height="28px">
+						</a>
+						<a href="">
+							<img src="/css/img/icon-delete-29.jpg" alt="deletar" title="Deletar" width="28px" height="28px">
+						</a>
+					</td>
+				</tr>
+
+				<tr>
+					<td>Roberto Marinho</td>
+					<td>excluido</td>
+					<td>11/05/2022</td>
+					<td>Funcionario</td>
+					<td>roberto@yanhoo.com.br</td>
+					<td>
+						<a href="/tela_editarPermissoesUsuario.html">
+							<img src="/css/img/editar.png" alt="editarUsuario" title="Editar" width="28px" height="28px">
+						</a>
+						<a href="">
+							<img src="/css/img/icon-delete-29.jpg" alt="deletar" title="Deletar" width="28px" height="28px">
+						</a>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 83px;
+    left: 0px;
+    top: 0px;
+    background: #5951B4;
+}
+
+h1 {
+    position: absolute;
+    width: 218px;
+    height: 81px;
+    left: 598px;
+    top: -60px;
+
+    font-family: 'Martel';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 65.1329px;
+    line-height: 110px;
+
+    color: #FFFFFF;
+}
+
+form {
+    width: 600px;
+    height: 350px;
+    /* Apenas para centralizar o form na página */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    /* Para ver as bordas do formulário */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    background: #9C9AA3;
+}
+
+form div+div {
+    margin-top: 1em;
+}
+
+label {
+    /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+    display: inline-block;
+    width: 130px;
+    text-align: right;
+    color: #FFFFFF;
+    font: 1em sans-serif;
+}
+
+input,
+textarea {
+    /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+    font: 1.4em sans-serif;
+    border-radius: 8px;
+
+    /* Para dar o mesmo tamanho a todos os campo de texto */
+    width: 350px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* Para harmonizar o look & feel das bordas nos campos de texto*/
+    border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+    /* Dar um pouco de destaque nos elementos ativos */
+    border-color: #000;
+}
+
+textarea {
+    /* Para alinhar corretamente os campos de texto de várias linhas com sua label*/
+    vertical-align: top;
+
+    /* Para dar espaço suficiente para digitar algum texto */
+    height: 5em;
+
+    /* Para permitir aos usuários redimensionarem qualquer textarea verticalmente. Ele não funciona em todos os browsers */
+    resize: vertical;
+}
+
+.button {
+    margin-top: 10%;
+    float: right;
+}
+
+button {
+    background: #393383;
+    color: #FFFFFF;
+    border-radius: 5px;
+    /* Esta margem extra representa aproximadamente o mesmo espaço que o espaço entre as labels e os seus campos de texto*/
+    margin-left: .5em;
+    font: 1em sans-serif;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.button2 {
+    margin-top: 10%;
+    float: left;
+    cursor: pointer;
+}
+
+.novousuario {
+    padding-left: 42%;
+    color: #FFFFFF;
+}
+
+button:hover {
+    background-color: dodgerblue;
+    cursor: pointer;
+}

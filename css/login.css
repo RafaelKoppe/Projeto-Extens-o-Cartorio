@@ -1,0 +1,76 @@
+body {
+    background-color: #5951b4;
+    font-family: Arial;
+    top: 0px;
+    left: 0px;
+}
+
+.row {
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 80px;
+    border-radius: 15px;
+}
+
+.cor_de_fundo_h1 {
+    position: absolute;
+    text-align: center;
+    left: 40%;
+    top: 1%;
+    background: #5951B4;
+    width: 100px;
+    height: 70px;
+    border-radius: 5px;
+}
+
+h1 {
+    color: white;
+    font: 15px;
+}
+
+#inputSenha,
+#inputUsuario {
+    margin-bottom: 1em;
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+    outline: none;
+}
+
+input {
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+label {
+    margin-bottom: 25px;
+    color: black;
+}
+
+#buttonLogin {
+    background-color: dodgerblue;
+    border: none;
+    padding: 10px;
+    width: 30%;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+#buttonConta{
+    background-color: dodgerblue;
+    border: none;
+    padding: 10px;
+    width: 30%;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+#buttonConta:hover, #buttonLogin:hover {
+    background-color: #393383;
+    cursor: pointer;
+}

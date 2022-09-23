@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+	<head>
+		<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+		<title>Tela Do Resumo Geral</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="resumoGeral" >
+		<link rel="StyleSheet" href="css/tela_conciliacao.css"/>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</head>
+	<body ondragstart="return false;" ondrop="return false;">
+		<header>
+			<h1>SCB</h1>
+		
+			<div class="container">
+				<div class="img-usuario">
+					<img src="/css/img/admin.png" alt="usuario" title="Usuario Logado">
+				</div>
+				<div class="img-sair">
+					<a href="/teladelogin.html">
+						<img src="/css/img/sair.png" alt="sair" title="Sair">
+					</a>
+				</div>
+			</div>
+		</header>
+		
+		
+		<div class="CorMenuVertical">
+			<nav class="abrindoMenu">
+				<ul>
+					<li><a href="tela_carregamentoDeArquivos.html">Arquivos</a></li>
+					<li><a href="#" class="conciliacao">Conciliação</a>
+						<ul class="submenu">
+							<li><a href="/tela_deResumoGeral.html">Resumo Geral</a></li>
+						</ul>
+					</li>
+					<li><a href="/tela_listaDeUsuarios.html">Usuários</a></li>
+				</ul>
+			</nav>
+		</div>
+		
+		<h2>Conciliação do Resumo Geral</h2>
+		
+		<div class="listadeconciliacao">
+			<div class="extratobancario">
+				<h3>Extrato Bancario</h3>
+			</div>
+			<div class="atospraticados">
+				<h3>Atos Praticados</h3>
+			</div>
+			<div class="button">
+				<button type="submit"><img src="/css/img/enviar.png" alt="Emitir Relatorio">Emitir Relatorio</button>
+			</div>
+			<table>
+				<tr>
+					<th>Data</th>
+					<th>N da conta</th>
+					<th>Valor Total</th>
+					<th>Diferença</th>
+					<th>valor total</th>
+					<th>Total Caixa</th>
+					<th>data</th>
+				</tr>
+				<tr>
+					<td>15/02/2022</td>
+					<td>9278897342</td>
+					<td>R$ 4.265,70</td>
+					<td style="color: orange;">R$ 00	</td>
+					<td>R$ 4.265,70</td>
+					<td>R$ 4.265,70</td>
+					<td>15/02/2022</td>
+				</tr>
+				<tr>
+					<td>18/05/2022</td>
+					<td>9278897342</td>
+					<td>R$ 5.276,69</td>
+					<td style="color: greenyellow;">R$ 52,58</td>
+					<td>R$ 5.224,05</td>
+					<td>R$ 5.224,05</td>
+					<td>18/05/2022</td>
+				</tr>
+				<tr>
+					<td>20/04/2022</td>
+					<td>9278897342</td>
+					<td>R$ 5.130,56</td>
+					<td style="color: greenyellow;">R$ 2.720,43</td>
+					<td>R$ 2.410,13</td>
+					<td>R$ 2.410,13</td>
+					<td>20/04/2022</td>
+				</tr>
+				<tr>
+					<td>20/04/2022</td>
+					<td>9278897342</td>
+					<td>R$ 5.130,56</td>
+					<td style="color: red;">R$ 2.279,57</td>
+					<td>R$ 7.410,13</td>
+					<td>R$ 7.410,13</td>
+					<td>20/04/2022</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+	<title>Tela de Carregamento de Arquivos</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="tela de carregamento_de_arquivos">
+	<link rel="StyleSheet" href="/css/tela_carregamentoDeArquivos.css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/import.js" defer></script>
+</head>
+
+<body ondragstart="return false;" ondrop="return false;">
+	<header>
+		<div class="Logo">
+			<a href="">
+				<img src="/css/img/admin.png" alt="adm" title="Usuario Logado">
+			</a>
+		</div>
+		<h1>SCB</h1>
+		<div class="botaoDeSair">
+			<a href="/teladelogin.html">
+				<img src="/css/img/sair.png" alt="sair" title="sair">
+			</a>
+		</div>
+	</header>
+	<div class="CorMenuVertical">
+		<nav class="abrindoMenu">
+			<ul>
+				<li><a href="tela_carregamentoDeArquivos.html">Arquivos</a></li>
+				<li><a href="#" class="conciliacao">Conciliação</a>
+					<ul class="submenu">
+						<li><a href="/tela_deResumoGeral.html">Resumo Geral</a></li>
+					</ul>
+				</li>
+				<li><a href="/tela_listaDeUsuarios.html">Usuários</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div>
+		<h2>Carregamento De Arquivos</h2>
+	</div>
+
+	<div class="corDeFundoArquivos">
+
+		<form action="">
+
+			<div class="container">
+				<h3>Extrato Bancário</h3>
+				<input type="file" id="file" class="arquivo">
+				<label for="file">
+					<img src="/css/img/importarArquivo.png" class="imgArquivo" id="imgArquivo"
+						alt="Importar Arquivo" title="Importar Arquivo" align="middle" width="3%">
+					<input type="text" name="file" id="input-file" class="file" placeholder="/Endereço do Arquivo"
+						readonly="readonly">
+				</label>
+				<img src="/css/img/visualizarNoSistema.png" alt="enviarArquivo" title="Enviar Arquivo"
+					align="middle" width="4%">
+				<img src="/css/img/carregarArquivo.png" alt="visualizarArquivo" title="Visualizar Arquivo"
+					align="middle" width="3%" class="carregarFile">
+
+				<h3>Atos Praticados</h3>
+				<input type="file" id="file2" class="arquivo2">
+				<label for="file2">
+					<img src="/css/img/importarArquivo.png" class="imgArquivo2" id="imgArquivo2"
+						alt="Importar Arquivo" title="Importar Arquivo" align="middle" width="3%">
+					<input type="text" name="file" id="input-file2" class="file" placeholder="/Endereço do Arquivo"
+						readonly="readonly">
+				</label>
+				<img src="/css/img/visualizarNoSistema.png" alt="enviarArquivo" title="Enviar Arquivo"
+					align="middle" width="4%">
+				<img src="/css/img/carregarArquivo.png" alt="visualizarArquivo" title="Visualizar Arquivo"
+					align="middle" width="3%" class="carregarFile">
+			</div>
+		</form>
+	</div>
+</body>
+
+</html>

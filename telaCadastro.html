@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCB</title>
+    <link rel="stylesheet" href="/css/cadastro.css">
+</head>
+<body>
+    <header>
+        <h1>SCB</h1>
+    </header>
+
+    <form action="/pagina-processa-dados-do-form" method="post">
+
+        <div class="novousuario">
+            <h3>Novo usuário</h3>
+        </div>
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="usuario_nome" />
+        </div>
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="usuario_email" />
+        </div>
+        <div>
+            <label for="cargo">Cargo:</label>
+            <input type="text" id="cargo" name="usuario_cargo" />
+        </div>
+        <div>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="usuario_senha"
+            minlength="8" required />
+        </div>
+        <div>
+            <label for="senha">Confirmar senha:</label>
+            <input type="password" id="senha" name="usuario_senha"
+            minlength="8" required />
+        </div>
+        <div class="button">
+            <button type="submit">cadastrar</button>
+        </div>
+        <div class="button2">
+            <button onclick="window.location.href='teladelogin.html'">voltar</button>
+        </div>
+    </form>
+</body>
+</html>

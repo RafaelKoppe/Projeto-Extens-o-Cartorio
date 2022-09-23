@@ -1,0 +1,235 @@
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #5951B4;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+}
+
+header h1 {
+    position: absolute;
+    text-align: justify;
+    left: 45%;
+    transform: translateY(-50%);
+    font-family: 'Martel';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 65px;
+    color: white;
+    /* identical to box height */
+}
+
+.Logo {
+    position: absolute;
+    float: left;
+    display: block;
+    padding: 15px 15px;
+}
+
+.botaoDeSair {
+    float: right;
+    display: block;
+    padding: 20px 15px;
+    position: absolute;
+    left: 92%;
+    right: 4.34%;
+    top: 1.56%;
+    bottom: 93.31%;
+}
+
+.CorMenuVertical {
+    background-color: #393383;
+    position: fixed;
+    width: 280px;
+    height: 100%;
+    left: 0px;
+    top: 100px;
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+    transform: translateY(80%);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    align-self: center;
+}
+
+nav ul li a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    transition: background .3s;
+    text-transform: uppercase;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.abrindoMenu ul ul li a {
+    font-size: 13px;
+    font-weight: 300;
+    padding-left: 60px;
+}
+
+.abrindoMenu ul ul {
+    display: none;
+}
+
+.abrindoMenu ul .submenu.mostra {
+    display: block;
+}
+
+/* código para mudar a cor de fundo
+.abrindoMenu > .active > a{
+    background-color: #000;
+    color: white;
+}  */
+
+nav ul li a:hover {
+    background-color: black;
+    color: white;
+}
+
+.corDeFundoEdição {
+    position: relative;
+    background-color: #7369d6;
+    width: 60%;
+    height: 400px;
+    left: 400px;
+    top: 50px;
+    border-radius: 5px;
+}
+
+.form-group {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 20px 40px;
+    color: black;
+    font-size: 15px;
+}
+
+.form-group label {
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.form-group input {
+    margin-bottom: 10px;
+    outline: unset;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.checkbox {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 55%;
+    top: 33%;
+}
+
+.container {
+    font-size: 22px;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+
+.container input {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+}
+
+/* Cria o checkbox customizado */
+.container .check {
+    margin-left: 15px;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+/* Quando o checkbox é clicado, adiciona um cor de fundo azul */
+.container input:checked ~ .check {
+    background-color: #2196f3;
+}
+
+/*  Criar o icone do check, defini a largura com rotação para o icone,
+e quando não estiver selecionado fica escondido*/
+.container .check::after {
+    top: 5px;
+    left: 9px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* Esconde o icone quando não estiver selecionado */
+.check:after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Exibi o icone quando seleciona */
+.container input:checked ~ .check:after {
+    display: block;
+}
+
+.corDeFundoEdição img {
+    padding-left: 10%;
+    padding-top: 10px;
+}
+
+button {
+    background-color: dodgerblue;
+    border: none;
+    padding: 8px;
+    margin-left: 70px;
+    width: 20%;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: deepskyblue;
+    cursor: pointer;
+}
+
+h3 {
+    color: #fff;
+    position: absolute;
+    padding-left: 20%;
+    top: 5%;
+}
+
+.corDeFundoEdição .voltar img{
+    position: absolute;
+    padding-left: 15px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
